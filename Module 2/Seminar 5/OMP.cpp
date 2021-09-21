@@ -110,20 +110,8 @@ int main(){
         }
     }
 
-
-    // Question 5 - Add default(none) attribute
-    #pragma omp parallel default(none) shared(size, v1, v2, v3)
-    {
-        #pragma omp for
-        for (size_t i = 0; i < size; i++)
-        {
-            v3[i] = v1[i] + v2[i];
-        }
-    }
-
-
-    
-    // Question 6 - Scheduling techniques
+ 
+    // Question 5 - Scheduling techniques
 
     // #pragma omp for schedule(static, 4)
     // #pragma omp for schedule(static, 8)
